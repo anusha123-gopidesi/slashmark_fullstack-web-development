@@ -1,0 +1,174 @@
+/* 🌙 DARK (default) */
+.dark {
+  background: #0f172a;
+  color: white;
+}
+
+/* ☀️ LIGHT (fixed properly) */
+.light {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* 🌐 BASE */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Layout */
+.app {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Toggle */
+.toggle {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.toggle button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  text-align: center;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Input */
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  background: white;
+  color: black;
+}
+
+.light input {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+/* Button */
+button {
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Suggestions */
+.suggestions {
+  background: #1e293b;
+  margin: auto;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+}
+
+.light .suggestions {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Current */
+.current {
+  text-align: center;
+}
+
+.temp {
+  font-size: 80px;
+}
+
+.desc {
+  font-size: 18px;
+}
+
+/* Details */
+.details {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.light .details {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Sections */
+.section {
+  margin-top: 40px;
+}
+
+/* Hourly + Forecast */
+.hourly,
+.forecast {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+/* Cards */
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 15px;
+  min-width: 100px;
+  text-align: center;
+  color: white;
+}
+
+.light .card {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .temp {
+    font-size: 50px;
+  }
+
+  input {
+    width: 70%;
+  }
+}
